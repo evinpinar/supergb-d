@@ -1,0 +1,26 @@
+dataset: '../datasets/TODZ/'
+batchsize: 4
+numepochs: 10
+numcat: 12
+outputdir: '/logdir/'
+model_channels: (256, 512, 256, 1)
+dataloader_sample: 128
+neg_sample: 0.75
+dino: True
+rgb: True
+xyz: True
+normals: True
+depth_normalize: 2
+OPTIMIZER:
+  TYPE: "Adam"
+  BASE_LR: 0.001
+SCHEDULER:
+  TYPE: "StepLR"
+  StepLR:
+    gamma: 0.5
+    step_size: 15
+  CLIP_LR: 1e-5
+  MAX_EPOCH: 20
+LOG_PERIOD: 10
+VAL_PERIOD: 1
+CHECKPOINT_PERIOD: 1
