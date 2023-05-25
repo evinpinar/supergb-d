@@ -22,7 +22,7 @@ Our method, SupeRGB-D, groups pixels into small patches based on geometric cues 
     conda activate supergbd
 ```
 
-2. Install the TOD dataset from original repo [](link) and the TOD-Z ids from [here](link...). Preprocess the data to extract superpixels, training features and generate the ground truth. Fix the datapaths according to your local configuration.
+2. Install the TOD dataset from [original repo](https://drive.google.com/uc?export=download&id=157nWfb4pLbwAfOdMLls6q0lZQyqUCvLY) and the TOD-Z ids from [here](https://drive.google.com/file/d/1vkGmioePVXOw7CdoHWvhEM3oStCH-88v/view?usp=sharing). Preprocess the data to extract superpixels, training features and generate the ground truth. Fix the datapaths according to your local configuration.
 ```
     python data/preprocess_data_full.py # set up the number of threads according to your cpu
     # optionally, you can also only run data/process.py for single thread. 
@@ -32,10 +32,12 @@ Our method, SupeRGB-D, groups pixels into small patches based on geometric cues 
 ```
     python src/model_train.py --cfg configs/run_local.yaml
 ```
-4. Test the trained model
+4. Test the trained model.
 ```
     python src/model_eval.py --cfg configs/run_local.yaml
 ```
+
+An example checkpoint is provided [here](https://drive.google.com/file/d/172wKBgY4x-cWU5orymJqjOkjFiP0QORX/view?usp=sharing) which is based on 128 super-pixels and trained without DINO features.
 
 ## Citation
 
