@@ -43,14 +43,16 @@ An example checkpoint is provided [here](https://drive.google.com/file/d/172wKBg
 
 If you find this code helpful, please consider citing:
 ```
-@misc{ornek23,
-  url = {https://arxiv.org/abs/2212.11922},
-  author = {{\"O}rnek, Evin P{\i}nar and Krishnan, Aravindhan K and Gayaka, Shreekant and Kuo, Cheng-Hao and Sen, Arnie and Navab, Nassir and Tombari, Federico},
-  title = {SupeRGB-D: Zero-shot Instance Segmentation in Cluttered Indoor Environments},
-  publisher = {arXiv},
-  year = {2022},
-  copyright = {Creative Commons Attribution 4.0 International}
-}
+@ARTICLE{ornek23,
+  author={{\"O}rnek, Evin P{\i}nar and Krishnan, Aravindhan K and Gayaka, Shreekant and Kuo, Cheng-Hao and Sen, Arnie and Navab, Nassir and Tombari, Federico},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={SupeRGB-D: Zero-Shot Instance Segmentation in Cluttered Indoor Environments}, 
+  year={2023},
+  volume={8},
+  number={6},
+  pages={3709-3716},
+  doi={10.1109/LRA.2023.3271527}}
+
 ```
 
 ## Acknowledgements
